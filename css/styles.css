@@ -10,13 +10,59 @@ button {
   cursor: pointer;
 }
 
+h1, h2, h3, p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+ul, ol {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+img {
+  display: block;
+}
+
 .body {
   font-family: "Roboto", sans-serif;
   color: #434455;
   background-color: #ffffff;
 }
 
+.conteiner {
+ width: 1158px; 
+ margin-right: auto;
+ margin-left: auto;
+ padding-left: 15px;
+ padding-right: 15px;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 /* PAGE HEADER */
+
+.page-header-conteiner {
+  display: flex;
+  justify-content: space-between;
+}
+
+.page-navigation {
+  display: flex;
+}
+
 .logotype {
   color: #4d5ae5;
   font-family: "Raleway", sans-serif;
@@ -25,6 +71,7 @@ button {
   line-height: 1.17;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  margin-right: 76px;
 }
 
 .logo-studio {
@@ -35,6 +82,11 @@ button {
   line-height: 1.17;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+}
+
+.menu {
+  display: flex;
+  column-gap: 40px
 }
 
 .menu-link {
@@ -52,6 +104,11 @@ button {
 
 .address {
   font-style: normal;
+}
+
+.address-list {
+  display: flex;
+  column-gap: 40px;
 }
 
 .address-list-link {

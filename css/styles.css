@@ -10,12 +10,16 @@ button {
   cursor: pointer;
 }
 
-h1, h2, h3, p {
+h1,
+h2,
+h3,
+p {
   margin-top: 0;
   margin-bottom: 0;
 }
 
-ul, ol {
+ul,
+ol {
   margin-top: 0;
   margin-bottom: 0;
   padding-left: 0;
@@ -32,11 +36,11 @@ img {
 }
 
 .conteiner {
- width: 1158px; 
- margin-right: auto;
- margin-left: auto;
- padding-left: 15px;
- padding-right: 15px;
+  width: 1158px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .visually-hidden {
@@ -72,6 +76,7 @@ img {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   margin-right: 76px;
+  padding: 26px 0;
 }
 
 .logo-studio {
@@ -86,7 +91,7 @@ img {
 
 .menu {
   display: flex;
-  column-gap: 40px
+  column-gap: 40px;
 }
 
 .menu-link {
@@ -95,6 +100,8 @@ img {
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.02em;
+  display: block;
+  padding: 24px 0;
 }
 
 .menu-link:hover,
@@ -116,6 +123,8 @@ img {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
+  display: block;
+  padding: 24px 0;
 }
 
 .address-list-link:hover,
@@ -126,26 +135,35 @@ img {
 /* HEAD SECTION */
 
 .section-head {
-  background-color: #2e2f42;
+  background: var(--navyblue, #2e2f42);
+  text-align: center;
+  padding: 188px 0;
 }
 
 .section-head-titel {
   color: #ffffff;
   background: #2e2f42;
-  text-align: center;
   font-size: 56px;
   font-weight: 700;
   line-height: 1.07;
   letter-spacing: 0.02em;
+  max-width: 496px;
+  margin: 0 auto 48px;
 }
 
 .section-head-buttom {
-  background: #4d5ae5;
+  background: var(--iris, #4d5ae5);
   font-family: "Roboto", sans-serif;
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.04em;
   color: #ffffff;
+  border-radius: 4px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  display: inline-flex;
+  padding: 16px 32px;
+  align-items: flex-start;
+  gap: 10px;
 }
 
 .section-head-buttom:hover,
@@ -154,12 +172,28 @@ img {
 }
 
 /* OUR ADVANTAGES */
+
+.section-advantages {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.advantages-list {
+  display: flex;
+  column-gap: 24px;
+}
+
 .advantages-list-head {
   color: #2e2f42;
   font-size: 20px;
   font-weight: 500;
   line-height: 1.2;
   letter-spacing: 0.02em;
+  margin-bottom: 8px;
+}
+
+.advantages-list-item {
+  width: calc((100% - 3 * 24px) / 4);
 }
 
 .advantages-list-paragraph {
@@ -173,10 +207,29 @@ img {
 
 .section-team {
   background-color: #f4f4fd;
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.section-team-list {
+  display: flex;
+  column-gap: 24px;
 }
 
 .team-list-item {
   background-color: #ffffff;
+  width: calc((100% - 3 * 24px) / 4);
+  display: inline-flex;
+  padding-bottom: 0px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 32px;
+  border-radius: 0px 0px 4px 4px;
+  background: var(--white, #fff);
+  box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
+    0px 1px 1px 0px rgba(46, 47, 66, 0.16),
+    0px 1px 6px 0px rgba(46, 47, 66, 0.08);
 }
 
 .section-team-head {
@@ -187,6 +240,7 @@ img {
   line-height: 1.11;
   letter-spacing: 0.02em;
   text-transform: capitalize;
+  margin-bottom: 72px;
 }
 
 .team-img {
@@ -212,8 +266,30 @@ img {
 
 /* OUR PORTFOLIO */
 
+.section-portfolio {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
 .section-portfolio-list {
   background-color: #ffffff;
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 24px;
+}
+
+.portfolio-list-item {
+  border: 1px solid var(--cornflower, #e7e9fc);
+  background: var(--white, #fff);
+  display: flex;
+  width: 360px;
+  height: 420px;
+  padding-bottom: 0px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 32px;
+  flex-shrink: 0;
+  margin-bottom: 48px;
 }
 
 .section-portfolio-head {
@@ -224,6 +300,7 @@ img {
   line-height: 1.2;
   letter-spacing: 0.02em;
   text-transform: capitalize;
+  margin-bottom: 72px;
 }
 
 .portfolio-img {
@@ -249,6 +326,14 @@ img {
 
 .footer {
   background-color: #2e2f42;
+  padding: 100px 0;
+}
+
+.footer-conteiner {
+  width: 264px;
+  height: 112px;
+  flex-shrink: 0;
+  margin-left: 156px;
 }
 
 .footer-studio {
@@ -269,6 +354,8 @@ img {
   line-height: 1.17;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  margin-bottom: 16px;
+
 }
 
 .footer-paragraph {

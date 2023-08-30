@@ -322,9 +322,8 @@ img {
 .portfolio-container {
   padding: 32px 16px;
   border: 1px solid var(--cornflower, #e7e9fc);
-  border-top: none
-  mb8
-  ;
+  border-top: none;
+  margin-bottom: 8px;
 }
 
 .portfolio-head {

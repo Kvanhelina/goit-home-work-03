@@ -35,7 +35,7 @@ img {
   background-color: #ffffff;
 }
 
-.conteiner {
+.container {
   width: 1158px;
   margin-right: auto;
   margin-left: auto;
@@ -58,13 +58,18 @@ img {
 
 /* PAGE HEADER */
 
-.page-header-conteiner {
+.page-header {
+  border-bottom: 1px solid #e7e9fc
+}
+
+.page-header-container {
   display: flex;
   justify-content: space-between;
 }
 
 .page-navigation {
   display: flex;
+  align-items: center;
 }
 
 .logotype {
@@ -102,6 +107,7 @@ img {
   letter-spacing: 0.02em;
   display: block;
   padding: 24px 0;
+  margin-right: 40px;
 }
 
 .menu-link:hover,
@@ -125,6 +131,7 @@ img {
   letter-spacing: 0.02em;
   display: block;
   padding: 24px 0;
+  margin-right: 40px;
 }
 
 .address-list-link:hover,
@@ -329,7 +336,7 @@ img {
   padding: 100px 0;
 }
 
-.footer-conteiner {
+.footer-container {
   width: 264px;
   height: 112px;
   flex-shrink: 0;

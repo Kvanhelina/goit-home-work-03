@@ -99,6 +99,10 @@ img {
   column-gap: 40px;
 }
 
+.menu-item {
+  gap: 40px;
+}
+
 .menu-link {
   color: #2e2f42;
   font-size: 16px;
@@ -107,7 +111,6 @@ img {
   letter-spacing: 0.02em;
   display: block;
   padding: 24px 0;
-  margin-right: 40px;
 }
 
 .menu-link:hover,
@@ -124,6 +127,10 @@ img {
   column-gap: 40px;
 }
 
+.address-list-item {
+  gap: 40px;
+}
+
 .address-list-link {
   color: #434455;
   font-size: 16px;
@@ -131,7 +138,6 @@ img {
   letter-spacing: 0.02em;
   display: block;
   padding: 24px 0;
-  margin-right: 40px;
 }
 
 .address-list-link:hover,
@@ -167,10 +173,11 @@ img {
   color: #ffffff;
   border-radius: 4px;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-  display: inline-flex;
+  display: block;
+  min-width: 169px;
+  height: 56px;
   padding: 16px 32px;
-  align-items: flex-start;
-  gap: 10px;
+  border: none;
 }
 
 .section-head-buttom:hover,
@@ -188,6 +195,7 @@ img {
 .advantages-list {
   display: flex;
   column-gap: 24px;
+  gap: 24px;
 }
 
 .advantages-list-head {
@@ -221,6 +229,7 @@ img {
 .section-team-list {
   display: flex;
   column-gap: 24px;
+  gap: 24px;
 }
 
 .team-list-item {
@@ -362,6 +371,7 @@ img {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   margin-bottom: 16px;
+  display: inline-block;
 
 }
 
